@@ -47,6 +47,13 @@ I'm **Tongbo Xu**, an **AI PM** researching **computer vision**. **Anhui Univers
 以上仅展示项目简介，源码保持私有。<br>
 Project summaries only; source code remains private.
 
+## 文章 / Writing
+
+1. [微信公众号文章 / WeChat article](https://mp.weixin.qq.com/s/xaE4N5pzvhqohViHwmlHbg)
+2. [微信公众号文章 / WeChat article](https://mp.weixin.qq.com/s/UxXXmakDibp9JJj6A-B_Ow)
+3. [微信公众号文章 / WeChat article](https://mp.weixin.qq.com/s/ee-FGK-JbAx2Gma1YzCbXA)
+4. [微信公众号文章 / WeChat article](https://mp.weixin.qq.com/s/hTH5tWA1_2i25GKrkgDlOA)
+
 ---
 
 [xtborin@gmail.com](mailto:xtborin@gmail.com) &nbsp; · &nbsp; [个人网站 / Website](https://xtbreak.github.io/personalWeb/)
