@@ -1,25 +1,532 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="330" viewBox="0 0 1280 330" role="img" aria-labelledby="title desc">
-  <title id="title">徐同博 Tongbo Xu — AI PM · Computer Vision · Agent Skills</title>
-  <desc id="desc">米白、灰、黑色个人主页横幅。徐同博，安徽理工大学硕士研究生，研究方向为计算机视觉。右侧以取景框和相交圆形连接产品、视觉与工具。</desc>
-  <rect x="1" y="1" width="1278" height="328" rx="20" fill="#f7f5f1" stroke="#d8d5cf"/>
-  <g font-family="Arial, Helvetica, sans-serif" fill="#595652">
-    <text x="64" y="61" font-size="15" letter-spacing="1.7">AI PM · COMPUTER VISION · AGENT SKILLS</text>
-    <text x="64" y="230" font-size="22">From research to useful tools.</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="520" viewBox="0 0 1280 520" role="img" aria-labelledby="title desc">
+  <title id="title">徐同博 Tongbo Xu · AI 产品探索</title>
+  <desc id="desc">黑白灰个人横幅。右侧为简化 CNN 分类示意：数字 0 的 32×32×1 输入经过三组卷积、批归一化、ReLU 与池化，依次得到 16×16×8、8×8×16、4×4×32 特征图，展平为 512 维向量，经 64 单元全连接层和线性分类头、Softmax 输出 0–9 十个类别，高亮预测结果 0。扫描窗口与光点表示前向计算，图中的特征图、向量和隐藏节点均为抽样表示，输出分布为示意。</desc>
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#fff" stroke-opacity=".035"/>
+    </pattern>
+    <filter id="signal-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="glow"/>
+      <feMerge>
+        <feMergeNode in="glow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <marker id="arrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M1 1L7 4L1 7" fill="none" stroke="#a8adb4" stroke-width="1.2"/>
+    </marker>
+    <clipPath id="board">
+      <rect x="1" y="1" width="1278" height="518" rx="20"/>
+    </clipPath>
+  </defs>
+  <style>
+    .sans { font-family: Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif; }
+    .mono { font-family: 'SFMono-Regular', Menlo, Consolas, monospace; }
+    .wire { fill: none; stroke: #717985; stroke-width: 1; marker-end: url(#arrow); }
+    .signal { fill: none; stroke: #f5f6f8; stroke-width: 3; stroke-linecap: round; stroke-dasharray: .001 .999; animation: signal 3.6s linear infinite; animation-delay: var(--phase, 0s); }
+    .kernel { animation: scan 6s ease-in-out infinite; }
+    .class-node { animation: class-light 6s ease-in-out infinite; }
+    @keyframes scan { 0%, 100% { transform: translate(0, 0); } 25% { transform: translate(32px, 0); } 50% { transform: translate(32px, 32px); } 75% { transform: translate(0, 32px); } }
+    @keyframes class-light { 0%, 45%, 100% { fill: #1a1e23; } 60%, 85% { fill: #e8edf5; } }
+    .pulse { animation: pulse 4s ease-in-out infinite; }
+    .flow { stroke-dasharray: 30 1066; animation: flow 14s linear infinite; }
+    @keyframes signal {
+      0% { stroke-dashoffset: 1; opacity: 0; }
+      8%, 92% { opacity: 1; }
+      100% { stroke-dashoffset: 0; opacity: 0; }
+    }
+    @keyframes pulse { 0%, 100% { opacity: .3; } 50% { opacity: .8; } }
+    @keyframes flow { to { stroke-dashoffset: -1096; } }
+    @media (prefers-reduced-motion: reduce) {
+      .pulse, .flow { animation: none; opacity: 1; }
+      .signal { animation: none; opacity: 0; }
+      .kernel { animation: none; transform: none; }
+      .class-node { animation: none; fill: #e8edf5; }
+    }
+  </style>
+  <rect x="1" y="1" width="1278" height="518" rx="20" fill="#111315" stroke="#3b3e42"/>
+  <g clip-path="url(#board)">
+    <rect x="1" y="1" width="1278" height="518" fill="url(#grid)"/>
+    <path d="M1 64H1279" stroke="#3b3e42"/>
+    <text x="28" y="38" class="mono" font-size="13" letter-spacing="1.3" fill="#e8eaed">AI PRODUCT EXPLORATIONS</text>
+    <circle cx="1095" cy="33" r="3" fill="#e8eaed" class="pulse"/>
+    <text x="1110" y="38" class="mono" font-size="11" fill="#a8adb4">IDEAS IN MOTION</text>
+
+    <g class="sans">
+      <text x="64" y="115" font-size="14" letter-spacing="1.8" fill="#a8adb4">AI PM · GENERATIVE AI · AGENT SKILLS</text>
+      <text x="61" y="188" font-size="61" font-weight="700" letter-spacing="-2" fill="#f5f6f8">Tongbo Xu.</text>
+      <text x="65" y="221" font-size="20" fill="#c3c7cd">徐同博</text>
+      <text x="64" y="276" font-size="32" font-weight="600" fill="#f5f6f8">让 AI 能力，成为有用的产品。</text>
+      <text x="65" y="307" font-size="18" fill="#a8adb4">Turning AI capabilities into useful products.</text>
+      <text x="65" y="351" font-size="14" fill="#a8adb4">安徽理工大学 · 硕士 / AUST · Master's</text>
+    </g>
+
+    <g id="cnn" aria-label="三组卷积与十类分类 / Three convolution stages and ten-class classifier">
+    <text x="936" y="115" class="mono" font-size="12" fill="#c3c7cd" text-anchor="middle">CONVOLUTIONAL NEURAL NETWORK</text>
+    <text x="690" y="151" class="mono" font-size="9" fill="#a8adb4" text-anchor="middle">INPUT</text>
+    <text x="780" y="151" class="mono" font-size="9" fill="#a8adb4" text-anchor="middle">CONV 01</text>
+    <text x="866" y="151" class="mono" font-size="9" fill="#a8adb4" text-anchor="middle">CONV 02</text>
+    <text x="944" y="151" class="mono" font-size="9" fill="#a8adb4" text-anchor="middle">CONV 03</text>
+    <text x="1016" y="151" class="mono" font-size="9" fill="#a8adb4" text-anchor="middle">FLATTEN</text>
+    <text x="1082" y="139" class="mono" font-size="9" fill="#a8adb4" text-anchor="middle">DENSE · 64</text>
+    <text x="1180" y="139" class="mono" font-size="10" fill="#dbe0e7" text-anchor="middle">10 CLASSES</text>
+    <text x="1082" y="153" class="mono" font-size="8" fill="#a8adb4" text-anchor="middle">RELU</text>
+    <text x="1180" y="153" class="mono" font-size="8" fill="#a8adb4" text-anchor="middle">SOFTMAX</text>
+    <g id="input-image" aria-label="Digit 0 input, 32×32×1; representative pixels">
+    <rect x="658" y="190" width="64" height="64" rx="3" fill="#171b20" stroke="#9ba5b2"/>
+    <rect x="660.0" y="192.0" width="6" height="6" fill="#d7dfe9" opacity="0.08"/>
+    <rect x="667.5" y="192.0" width="6" height="6" fill="#d7dfe9" opacity="0.08"/>
+    <rect x="675.0" y="192.0" width="6" height="6" fill="#d7dfe9" opacity="0.90"/>
+    <rect x="682.5" y="192.0" width="6" height="6" fill="#d7dfe9" opacity="0.90"/>
+    <rect x="690.0" y="192.0" width="6" height="6" fill="#d7dfe9" opacity="0.90"/>
+    <rect x="697.5" y="192.0" width="6" height="6" fill="#d7dfe9" opacity="0.90"/>
+    <rect x="705.0" y="192.0" width="6" height="6" fill="#d7dfe9" opacity="0.08"/>
+    <rect x="712.5" y="192.0" width="6" height="6" fill="#d7dfe9" opacity="0.08"/>
+    <rect x="660.0" y="199.5" width="6" height="6" fill="#d7dfe9" opacity="0.08"/>
+    <rect x="667.5" y="199.5" width="6" height="6" fill="#d7dfe9" opacity="0.90"/>
+    <rect x="675.0" y="199.5" width="6" height="6" fill="#d7dfe9" opacity="0.90"/>
+    <rect x="682.5" y="199.5" width="6" height="6" fill="#d7dfe9" opacity="0.08"/>
+    <rect x="690.0" y="199.5" width="6" height="6" fill="#d7dfe9" opacity="0.08"/>
+    <rect x="697.5" y="199.5" width="6" height="6" fill="#d7dfe9" opacity="0.90"/>
+    <rect x="705.0" y="199.5" width="6" height="6" fill="#d7dfe9" opacity="0.90"/>
+    <rect x="712.5" y="199.5" width="6" height="6" fill="#d7dfe9" opacity="0.08"/>
+    <rect x="660.0" y="207.0" width="6" height="6" fill="#d7dfe9" opacity="0.08"/>
+    <rect x="667.5" y="207.0" width="6" height="6" fill="#d7dfe9" opacity="0.90"/>
+    <rect x="675.0" y="207.0" width="6" height="6" fill="#d7dfe9" opacity="0.90"/>
+    <rect x="682.5" y="207.0" width="6" height="6" fill="#d7dfe9" opacity="0.08"/>
+    <rect x="690.0" y="207.0" width="6" height="6" fill="#d7dfe9" opacity="0.08"/>
+    <rect x="697.5" y="207.0" width="6" height="6" fill="#d7dfe9" opacity="0.90"/>
+    <rect x="705.0" y="207.0" width="6" height="6" fill="#d7dfe9" opacity="0.90"/>
+    <rect x="712.5" y="207.0" width="6" height="6" fill="#d7dfe9" opacity="0.08"/>
+    <rect x="660.0" y="214.5" width="6" height="6" fill="#d7dfe9" opacity="0.08"/>
+    <rect x="667.5" y="214.5" width="6" height="6" fill="#d7dfe9" opacity="0.90"/>
+    <rect x="675.0" y="214.5" width="6" height="6" fill="#d7dfe9" opacity="0.90"/>
+    <rect x="682.5" y="214.5" width="6" height="6" fill="#d7dfe9" opacity="0.08"/>
+    <rect x="690.0" y="214.5" width="6" height="6" fill="#d7dfe9" opacity="0.08"/>
+    <rect x="697.5" y="214.5" width="6" height="6" fill="#d7dfe9" opacity="0.90"/>
+    <rect x="705.0" y="214.5" width="6" height="6" fill="#d7dfe9" opacity="0.90"/>
+    <rect x="712.5" y="214.5" width="6" height="6" fill="#d7dfe9" opacity="0.08"/>
+    <rect x="660.0" y="222.0" width="6" height="6" fill="#d7dfe9" opacity="0.08"/>
+    <rect x="667.5" y="222.0" width="6" height="6" fill="#d7dfe9" opacity="0.90"/>
+    <rect x="675.0" y="222.0" width="6" height="6" fill="#d7dfe9" opacity="0.90"/>
+    <rect x="682.5" y="222.0" width="6" height="6" fill="#d7dfe9" opacity="0.08"/>
+    <rect x="690.0" y="222.0" width="6" height="6" fill="#d7dfe9" opacity="0.08"/>
+    <rect x="697.5" y="222.0" width="6" height="6" fill="#d7dfe9" opacity="0.90"/>
+    <rect x="705.0" y="222.0" width="6" height="6" fill="#d7dfe9" opacity="0.90"/>
+    <rect x="712.5" y="222.0" width="6" height="6" fill="#d7dfe9" opacity="0.08"/>
+    <rect x="660.0" y="229.5" width="6" height="6" fill="#d7dfe9" opacity="0.08"/>
+    <rect x="667.5" y="229.5" width="6" height="6" fill="#d7dfe9" opacity="0.90"/>
+    <rect x="675.0" y="229.5" width="6" height="6" fill="#d7dfe9" opacity="0.90"/>
+    <rect x="682.5" y="229.5" width="6" height="6" fill="#d7dfe9" opacity="0.08"/>
+    <rect x="690.0" y="229.5" width="6" height="6" fill="#d7dfe9" opacity="0.08"/>
+    <rect x="697.5" y="229.5" width="6" height="6" fill="#d7dfe9" opacity="0.90"/>
+    <rect x="705.0" y="229.5" width="6" height="6" fill="#d7dfe9" opacity="0.90"/>
+    <rect x="712.5" y="229.5" width="6" height="6" fill="#d7dfe9" opacity="0.08"/>
+    <rect x="660.0" y="237.0" width="6" height="6" fill="#d7dfe9" opacity="0.08"/>
+    <rect x="667.5" y="237.0" width="6" height="6" fill="#d7dfe9" opacity="0.90"/>
+    <rect x="675.0" y="237.0" width="6" height="6" fill="#d7dfe9" opacity="0.90"/>
+    <rect x="682.5" y="237.0" width="6" height="6" fill="#d7dfe9" opacity="0.08"/>
+    <rect x="690.0" y="237.0" width="6" height="6" fill="#d7dfe9" opacity="0.08"/>
+    <rect x="697.5" y="237.0" width="6" height="6" fill="#d7dfe9" opacity="0.90"/>
+    <rect x="705.0" y="237.0" width="6" height="6" fill="#d7dfe9" opacity="0.90"/>
+    <rect x="712.5" y="237.0" width="6" height="6" fill="#d7dfe9" opacity="0.08"/>
+    <rect x="660.0" y="244.5" width="6" height="6" fill="#d7dfe9" opacity="0.08"/>
+    <rect x="667.5" y="244.5" width="6" height="6" fill="#d7dfe9" opacity="0.08"/>
+    <rect x="675.0" y="244.5" width="6" height="6" fill="#d7dfe9" opacity="0.90"/>
+    <rect x="682.5" y="244.5" width="6" height="6" fill="#d7dfe9" opacity="0.90"/>
+    <rect x="690.0" y="244.5" width="6" height="6" fill="#d7dfe9" opacity="0.90"/>
+    <rect x="697.5" y="244.5" width="6" height="6" fill="#d7dfe9" opacity="0.90"/>
+    <rect x="705.0" y="244.5" width="6" height="6" fill="#d7dfe9" opacity="0.08"/>
+    <rect x="712.5" y="244.5" width="6" height="6" fill="#d7dfe9" opacity="0.08"/>
+    <rect x="662" y="194" width="24" height="24" fill="#fff" fill-opacity=".06" stroke="#f5f6f8" stroke-width="1.3" class="kernel"/>
+    </g>
+    <g id="feature-map-1" aria-label="16×16×8; representative channels">
+    <rect x="758" y="192" width="48" height="48" fill="#1b2027" stroke="#8994a3" stroke-width=".8"/>
+    <rect x="755" y="195" width="48" height="48" fill="#1b2027" stroke="#8994a3" stroke-width=".8"/>
+    <rect x="752" y="198" width="48" height="48" fill="#1b2027" stroke="#8994a3" stroke-width=".8"/>
+    <rect x="754.0" y="200.0" width="9.0" height="9.0" fill="#d7dfe9" opacity="0.28"/>
+    <rect x="766.0" y="200.0" width="9.0" height="9.0" fill="#d7dfe9" opacity="0.58"/>
+    <rect x="778.0" y="200.0" width="9.0" height="9.0" fill="#d7dfe9" opacity="0.28"/>
+    <rect x="790.0" y="200.0" width="9.0" height="9.0" fill="#d7dfe9" opacity="0.58"/>
+    <rect x="754.0" y="212.0" width="9.0" height="9.0" fill="#d7dfe9" opacity="0.48"/>
+    <rect x="766.0" y="212.0" width="9.0" height="9.0" fill="#d7dfe9" opacity="0.18"/>
+    <rect x="778.0" y="212.0" width="9.0" height="9.0" fill="#d7dfe9" opacity="0.48"/>
+    <rect x="790.0" y="212.0" width="9.0" height="9.0" fill="#d7dfe9" opacity="0.18"/>
+    <rect x="754.0" y="224.0" width="9.0" height="9.0" fill="#d7dfe9" opacity="0.68"/>
+    <rect x="766.0" y="224.0" width="9.0" height="9.0" fill="#d7dfe9" opacity="0.38"/>
+    <rect x="778.0" y="224.0" width="9.0" height="9.0" fill="#d7dfe9" opacity="0.68"/>
+    <rect x="790.0" y="224.0" width="9.0" height="9.0" fill="#d7dfe9" opacity="0.38"/>
+    <rect x="754.0" y="236.0" width="9.0" height="9.0" fill="#d7dfe9" opacity="0.28"/>
+    <rect x="766.0" y="236.0" width="9.0" height="9.0" fill="#d7dfe9" opacity="0.58"/>
+    <rect x="778.0" y="236.0" width="9.0" height="9.0" fill="#d7dfe9" opacity="0.28"/>
+    <rect x="790.0" y="236.0" width="9.0" height="9.0" fill="#d7dfe9" opacity="0.58"/>
+    </g>
+    <g id="feature-map-2" aria-label="8×8×16; representative channels">
+    <rect x="856" y="192" width="36" height="36" fill="#1b2027" stroke="#8994a3" stroke-width=".8"/>
+    <rect x="853" y="195" width="36" height="36" fill="#1b2027" stroke="#8994a3" stroke-width=".8"/>
+    <rect x="850" y="198" width="36" height="36" fill="#1b2027" stroke="#8994a3" stroke-width=".8"/>
+    <rect x="847" y="201" width="36" height="36" fill="#1b2027" stroke="#8994a3" stroke-width=".8"/>
+    <rect x="844" y="204" width="36" height="36" fill="#1b2027" stroke="#8994a3" stroke-width=".8"/>
+    <rect x="846.0" y="206.0" width="6.0" height="6.0" fill="#d7dfe9" opacity="0.38"/>
+    <rect x="855.0" y="206.0" width="6.0" height="6.0" fill="#d7dfe9" opacity="0.68"/>
+    <rect x="864.0" y="206.0" width="6.0" height="6.0" fill="#d7dfe9" opacity="0.38"/>
+    <rect x="873.0" y="206.0" width="6.0" height="6.0" fill="#d7dfe9" opacity="0.68"/>
+    <rect x="846.0" y="215.0" width="6.0" height="6.0" fill="#d7dfe9" opacity="0.58"/>
+    <rect x="855.0" y="215.0" width="6.0" height="6.0" fill="#d7dfe9" opacity="0.28"/>
+    <rect x="864.0" y="215.0" width="6.0" height="6.0" fill="#d7dfe9" opacity="0.58"/>
+    <rect x="873.0" y="215.0" width="6.0" height="6.0" fill="#d7dfe9" opacity="0.28"/>
+    <rect x="846.0" y="224.0" width="6.0" height="6.0" fill="#d7dfe9" opacity="0.18"/>
+    <rect x="855.0" y="224.0" width="6.0" height="6.0" fill="#d7dfe9" opacity="0.48"/>
+    <rect x="864.0" y="224.0" width="6.0" height="6.0" fill="#d7dfe9" opacity="0.18"/>
+    <rect x="873.0" y="224.0" width="6.0" height="6.0" fill="#d7dfe9" opacity="0.48"/>
+    <rect x="846.0" y="233.0" width="6.0" height="6.0" fill="#d7dfe9" opacity="0.38"/>
+    <rect x="855.0" y="233.0" width="6.0" height="6.0" fill="#d7dfe9" opacity="0.68"/>
+    <rect x="864.0" y="233.0" width="6.0" height="6.0" fill="#d7dfe9" opacity="0.38"/>
+    <rect x="873.0" y="233.0" width="6.0" height="6.0" fill="#d7dfe9" opacity="0.68"/>
+    </g>
+    <g id="feature-map-3" aria-label="4×4×32; representative channels">
+    <rect x="944" y="192" width="24" height="24" fill="#1b2027" stroke="#8994a3" stroke-width=".8"/>
+    <rect x="941" y="195" width="24" height="24" fill="#1b2027" stroke="#8994a3" stroke-width=".8"/>
+    <rect x="938" y="198" width="24" height="24" fill="#1b2027" stroke="#8994a3" stroke-width=".8"/>
+    <rect x="935" y="201" width="24" height="24" fill="#1b2027" stroke="#8994a3" stroke-width=".8"/>
+    <rect x="932" y="204" width="24" height="24" fill="#1b2027" stroke="#8994a3" stroke-width=".8"/>
+    <rect x="929" y="207" width="24" height="24" fill="#1b2027" stroke="#8994a3" stroke-width=".8"/>
+    <rect x="926" y="210" width="24" height="24" fill="#1b2027" stroke="#8994a3" stroke-width=".8"/>
+    <rect x="928.0" y="212.0" width="3.0" height="3.0" fill="#d7dfe9" opacity="0.48"/>
+    <rect x="934.0" y="212.0" width="3.0" height="3.0" fill="#d7dfe9" opacity="0.18"/>
+    <rect x="940.0" y="212.0" width="3.0" height="3.0" fill="#d7dfe9" opacity="0.48"/>
+    <rect x="946.0" y="212.0" width="3.0" height="3.0" fill="#d7dfe9" opacity="0.18"/>
+    <rect x="928.0" y="218.0" width="3.0" height="3.0" fill="#d7dfe9" opacity="0.68"/>
+    <rect x="934.0" y="218.0" width="3.0" height="3.0" fill="#d7dfe9" opacity="0.38"/>
+    <rect x="940.0" y="218.0" width="3.0" height="3.0" fill="#d7dfe9" opacity="0.68"/>
+    <rect x="946.0" y="218.0" width="3.0" height="3.0" fill="#d7dfe9" opacity="0.38"/>
+    <rect x="928.0" y="224.0" width="3.0" height="3.0" fill="#d7dfe9" opacity="0.28"/>
+    <rect x="934.0" y="224.0" width="3.0" height="3.0" fill="#d7dfe9" opacity="0.58"/>
+    <rect x="940.0" y="224.0" width="3.0" height="3.0" fill="#d7dfe9" opacity="0.28"/>
+    <rect x="946.0" y="224.0" width="3.0" height="3.0" fill="#d7dfe9" opacity="0.58"/>
+    <rect x="928.0" y="230.0" width="3.0" height="3.0" fill="#d7dfe9" opacity="0.48"/>
+    <rect x="934.0" y="230.0" width="3.0" height="3.0" fill="#d7dfe9" opacity="0.18"/>
+    <rect x="940.0" y="230.0" width="3.0" height="3.0" fill="#d7dfe9" opacity="0.48"/>
+    <rect x="946.0" y="230.0" width="3.0" height="3.0" fill="#d7dfe9" opacity="0.18"/>
+    </g>
+    <text x="690" y="278" class="mono" font-size="10" fill="#a8adb4" text-anchor="middle">32×32×1</text>
+    <text x="780" y="278" class="mono" font-size="10" fill="#a8adb4" text-anchor="middle">16×16×8</text>
+    <text x="866" y="278" class="mono" font-size="10" fill="#a8adb4" text-anchor="middle">8×8×16</text>
+    <text x="944" y="278" class="mono" font-size="10" fill="#a8adb4" text-anchor="middle">4×4×32</text>
+    <g id="flattened-vector" aria-label="512-dimensional vector; representative entries">
+    <rect x="1010" y="176" width="12" height="6" rx="1" fill="#b3bdca" opacity="0.30"/>
+    <rect x="1010" y="186" width="12" height="6" rx="1" fill="#b3bdca" opacity="0.46"/>
+    <rect x="1010" y="196" width="12" height="6" rx="1" fill="#b3bdca" opacity="0.62"/>
+    <rect x="1010" y="206" width="12" height="6" rx="1" fill="#b3bdca" opacity="0.78"/>
+    <rect x="1010" y="216" width="12" height="6" rx="1" fill="#b3bdca" opacity="0.30"/>
+    <rect x="1010" y="226" width="12" height="6" rx="1" fill="#b3bdca" opacity="0.46"/>
+    <rect x="1010" y="236" width="12" height="6" rx="1" fill="#b3bdca" opacity="0.62"/>
+    <rect x="1010" y="246" width="12" height="6" rx="1" fill="#b3bdca" opacity="0.78"/>
+    <rect x="1010" y="256" width="12" height="6" rx="1" fill="#b3bdca" opacity="0.30"/>
+    <rect x="1010" y="266" width="12" height="6" rx="1" fill="#b3bdca" opacity="0.46"/>
+    <rect x="1010" y="276" width="12" height="6" rx="1" fill="#b3bdca" opacity="0.62"/>
+    <rect x="1010" y="286" width="12" height="6" rx="1" fill="#b3bdca" opacity="0.78"/>
+    <text x="1016" y="304" class="mono" font-size="10" fill="#a8adb4" text-anchor="middle">512</text>
+    </g>
+    <g id="dense-connections" fill="none" stroke="#95a1b1" stroke-opacity=".16" stroke-width=".65">
+    <path d="M1022 179L1077 170"/>
+    <path d="M1022 179L1077 188"/>
+    <path d="M1022 179L1077 206"/>
+    <path d="M1022 179L1077 224"/>
+    <path d="M1022 179L1077 242"/>
+    <path d="M1022 179L1077 260"/>
+    <path d="M1022 179L1077 278"/>
+    <path d="M1022 179L1077 296"/>
+    <path d="M1022 189L1077 170"/>
+    <path d="M1022 189L1077 188"/>
+    <path d="M1022 189L1077 206"/>
+    <path d="M1022 189L1077 224"/>
+    <path d="M1022 189L1077 242"/>
+    <path d="M1022 189L1077 260"/>
+    <path d="M1022 189L1077 278"/>
+    <path d="M1022 189L1077 296"/>
+    <path d="M1022 199L1077 170"/>
+    <path d="M1022 199L1077 188"/>
+    <path d="M1022 199L1077 206"/>
+    <path d="M1022 199L1077 224"/>
+    <path d="M1022 199L1077 242"/>
+    <path d="M1022 199L1077 260"/>
+    <path d="M1022 199L1077 278"/>
+    <path d="M1022 199L1077 296"/>
+    <path d="M1022 209L1077 170"/>
+    <path d="M1022 209L1077 188"/>
+    <path d="M1022 209L1077 206"/>
+    <path d="M1022 209L1077 224"/>
+    <path d="M1022 209L1077 242"/>
+    <path d="M1022 209L1077 260"/>
+    <path d="M1022 209L1077 278"/>
+    <path d="M1022 209L1077 296"/>
+    <path d="M1022 219L1077 170"/>
+    <path d="M1022 219L1077 188"/>
+    <path d="M1022 219L1077 206"/>
+    <path d="M1022 219L1077 224"/>
+    <path d="M1022 219L1077 242"/>
+    <path d="M1022 219L1077 260"/>
+    <path d="M1022 219L1077 278"/>
+    <path d="M1022 219L1077 296"/>
+    <path d="M1022 229L1077 170"/>
+    <path d="M1022 229L1077 188"/>
+    <path d="M1022 229L1077 206"/>
+    <path d="M1022 229L1077 224"/>
+    <path d="M1022 229L1077 242"/>
+    <path d="M1022 229L1077 260"/>
+    <path d="M1022 229L1077 278"/>
+    <path d="M1022 229L1077 296"/>
+    <path d="M1022 239L1077 170"/>
+    <path d="M1022 239L1077 188"/>
+    <path d="M1022 239L1077 206"/>
+    <path d="M1022 239L1077 224"/>
+    <path d="M1022 239L1077 242"/>
+    <path d="M1022 239L1077 260"/>
+    <path d="M1022 239L1077 278"/>
+    <path d="M1022 239L1077 296"/>
+    <path d="M1022 249L1077 170"/>
+    <path d="M1022 249L1077 188"/>
+    <path d="M1022 249L1077 206"/>
+    <path d="M1022 249L1077 224"/>
+    <path d="M1022 249L1077 242"/>
+    <path d="M1022 249L1077 260"/>
+    <path d="M1022 249L1077 278"/>
+    <path d="M1022 249L1077 296"/>
+    <path d="M1022 259L1077 170"/>
+    <path d="M1022 259L1077 188"/>
+    <path d="M1022 259L1077 206"/>
+    <path d="M1022 259L1077 224"/>
+    <path d="M1022 259L1077 242"/>
+    <path d="M1022 259L1077 260"/>
+    <path d="M1022 259L1077 278"/>
+    <path d="M1022 259L1077 296"/>
+    <path d="M1022 269L1077 170"/>
+    <path d="M1022 269L1077 188"/>
+    <path d="M1022 269L1077 206"/>
+    <path d="M1022 269L1077 224"/>
+    <path d="M1022 269L1077 242"/>
+    <path d="M1022 269L1077 260"/>
+    <path d="M1022 269L1077 278"/>
+    <path d="M1022 269L1077 296"/>
+    <path d="M1022 279L1077 170"/>
+    <path d="M1022 279L1077 188"/>
+    <path d="M1022 279L1077 206"/>
+    <path d="M1022 279L1077 224"/>
+    <path d="M1022 279L1077 242"/>
+    <path d="M1022 279L1077 260"/>
+    <path d="M1022 279L1077 278"/>
+    <path d="M1022 279L1077 296"/>
+    <path d="M1022 289L1077 170"/>
+    <path d="M1022 289L1077 188"/>
+    <path d="M1022 289L1077 206"/>
+    <path d="M1022 289L1077 224"/>
+    <path d="M1022 289L1077 242"/>
+    <path d="M1022 289L1077 260"/>
+    <path d="M1022 289L1077 278"/>
+    <path d="M1022 289L1077 296"/>
+    <path d="M1087 170L1166 166"/>
+    <path d="M1087 170L1166 184"/>
+    <path d="M1087 170L1166 202"/>
+    <path d="M1087 170L1166 220"/>
+    <path d="M1087 170L1166 238"/>
+    <path d="M1087 170L1166 256"/>
+    <path d="M1087 170L1166 274"/>
+    <path d="M1087 170L1166 292"/>
+    <path d="M1087 170L1166 310"/>
+    <path d="M1087 170L1166 328"/>
+    <path d="M1087 188L1166 166"/>
+    <path d="M1087 188L1166 184"/>
+    <path d="M1087 188L1166 202"/>
+    <path d="M1087 188L1166 220"/>
+    <path d="M1087 188L1166 238"/>
+    <path d="M1087 188L1166 256"/>
+    <path d="M1087 188L1166 274"/>
+    <path d="M1087 188L1166 292"/>
+    <path d="M1087 188L1166 310"/>
+    <path d="M1087 188L1166 328"/>
+    <path d="M1087 206L1166 166"/>
+    <path d="M1087 206L1166 184"/>
+    <path d="M1087 206L1166 202"/>
+    <path d="M1087 206L1166 220"/>
+    <path d="M1087 206L1166 238"/>
+    <path d="M1087 206L1166 256"/>
+    <path d="M1087 206L1166 274"/>
+    <path d="M1087 206L1166 292"/>
+    <path d="M1087 206L1166 310"/>
+    <path d="M1087 206L1166 328"/>
+    <path d="M1087 224L1166 166"/>
+    <path d="M1087 224L1166 184"/>
+    <path d="M1087 224L1166 202"/>
+    <path d="M1087 224L1166 220"/>
+    <path d="M1087 224L1166 238"/>
+    <path d="M1087 224L1166 256"/>
+    <path d="M1087 224L1166 274"/>
+    <path d="M1087 224L1166 292"/>
+    <path d="M1087 224L1166 310"/>
+    <path d="M1087 224L1166 328"/>
+    <path d="M1087 242L1166 166"/>
+    <path d="M1087 242L1166 184"/>
+    <path d="M1087 242L1166 202"/>
+    <path d="M1087 242L1166 220"/>
+    <path d="M1087 242L1166 238"/>
+    <path d="M1087 242L1166 256"/>
+    <path d="M1087 242L1166 274"/>
+    <path d="M1087 242L1166 292"/>
+    <path d="M1087 242L1166 310"/>
+    <path d="M1087 242L1166 328"/>
+    <path d="M1087 260L1166 166"/>
+    <path d="M1087 260L1166 184"/>
+    <path d="M1087 260L1166 202"/>
+    <path d="M1087 260L1166 220"/>
+    <path d="M1087 260L1166 238"/>
+    <path d="M1087 260L1166 256"/>
+    <path d="M1087 260L1166 274"/>
+    <path d="M1087 260L1166 292"/>
+    <path d="M1087 260L1166 310"/>
+    <path d="M1087 260L1166 328"/>
+    <path d="M1087 278L1166 166"/>
+    <path d="M1087 278L1166 184"/>
+    <path d="M1087 278L1166 202"/>
+    <path d="M1087 278L1166 220"/>
+    <path d="M1087 278L1166 238"/>
+    <path d="M1087 278L1166 256"/>
+    <path d="M1087 278L1166 274"/>
+    <path d="M1087 278L1166 292"/>
+    <path d="M1087 278L1166 310"/>
+    <path d="M1087 278L1166 328"/>
+    <path d="M1087 296L1166 166"/>
+    <path d="M1087 296L1166 184"/>
+    <path d="M1087 296L1166 202"/>
+    <path d="M1087 296L1166 220"/>
+    <path d="M1087 296L1166 238"/>
+    <path d="M1087 296L1166 256"/>
+    <path d="M1087 296L1166 274"/>
+    <path d="M1087 296L1166 292"/>
+    <path d="M1087 296L1166 310"/>
+    <path d="M1087 296L1166 328"/>
+    </g>
+    <g id="dense-layer" aria-label="64-unit fully connected layer with ReLU; eight representative units" fill="#1b2027" stroke="#a1adbc" stroke-width="1">
+    <circle cx="1082" cy="170" r="5"/>
+    <circle cx="1082" cy="188" r="5"/>
+    <circle cx="1082" cy="206" r="5"/>
+    <circle cx="1082" cy="224" r="5"/>
+    <circle cx="1082" cy="242" r="5"/>
+    <circle cx="1082" cy="260" r="5"/>
+    <circle cx="1082" cy="278" r="5"/>
+    <circle cx="1082" cy="296" r="5"/>
+    </g>
+    <g id="class-output" aria-label="Digit classes 0–9; predicted digit 0; illustrative probabilities">
+    <circle cx="1172" cy="166" r="6" fill="#1a1e23" stroke="#b3bdca" stroke-width="1" class="class-node"/>
+    <text x="1190" y="169" class="mono" font-size="8" fill="#e8edf5" text-anchor="middle">0</text>
+    <rect x="1203" y="163" width="16" height="6" rx="1" fill="#2b313a"/>
+    <rect x="1203" y="163" width="16.0" height="6" rx="1" fill="#e8edf5"/>
+    <circle cx="1172" cy="184" r="6" fill="#1a1e23" stroke="#b3bdca" stroke-width="1"/>
+    <text x="1190" y="187" class="mono" font-size="8" fill="#a8adb4" text-anchor="middle">1</text>
+    <rect x="1203" y="181" width="16" height="6" rx="1" fill="#2b313a"/>
+    <rect x="1203" y="181" width="1.55" height="6" rx="1" fill="#8b96a5"/>
+    <circle cx="1172" cy="202" r="6" fill="#1a1e23" stroke="#b3bdca" stroke-width="1"/>
+    <text x="1190" y="205" class="mono" font-size="8" fill="#a8adb4" text-anchor="middle">2</text>
+    <rect x="1203" y="199" width="16" height="6" rx="1" fill="#2b313a"/>
+    <rect x="1203" y="199" width="0.77" height="6" rx="1" fill="#8b96a5"/>
+    <circle cx="1172" cy="220" r="6" fill="#1a1e23" stroke="#b3bdca" stroke-width="1"/>
+    <text x="1190" y="223" class="mono" font-size="8" fill="#a8adb4" text-anchor="middle">3</text>
+    <rect x="1203" y="217" width="16" height="6" rx="1" fill="#2b313a"/>
+    <rect x="1203" y="217" width="1.03" height="6" rx="1" fill="#8b96a5"/>
+    <circle cx="1172" cy="238" r="6" fill="#1a1e23" stroke="#b3bdca" stroke-width="1"/>
+    <text x="1190" y="241" class="mono" font-size="8" fill="#a8adb4" text-anchor="middle">4</text>
+    <rect x="1203" y="235" width="16" height="6" rx="1" fill="#2b313a"/>
+    <rect x="1203" y="235" width="0.52" height="6" rx="1" fill="#8b96a5"/>
+    <circle cx="1172" cy="256" r="6" fill="#1a1e23" stroke="#b3bdca" stroke-width="1"/>
+    <text x="1190" y="259" class="mono" font-size="8" fill="#a8adb4" text-anchor="middle">5</text>
+    <rect x="1203" y="253" width="16" height="6" rx="1" fill="#2b313a"/>
+    <rect x="1203" y="253" width="2.06" height="6" rx="1" fill="#8b96a5"/>
+    <circle cx="1172" cy="274" r="6" fill="#1a1e23" stroke="#b3bdca" stroke-width="1"/>
+    <text x="1190" y="277" class="mono" font-size="8" fill="#a8adb4" text-anchor="middle">6</text>
+    <rect x="1203" y="271" width="16" height="6" rx="1" fill="#2b313a"/>
+    <rect x="1203" y="271" width="1.29" height="6" rx="1" fill="#8b96a5"/>
+    <circle cx="1172" cy="292" r="6" fill="#1a1e23" stroke="#b3bdca" stroke-width="1"/>
+    <text x="1190" y="295" class="mono" font-size="8" fill="#a8adb4" text-anchor="middle">7</text>
+    <rect x="1203" y="289" width="16" height="6" rx="1" fill="#2b313a"/>
+    <rect x="1203" y="289" width="1.03" height="6" rx="1" fill="#8b96a5"/>
+    <circle cx="1172" cy="310" r="6" fill="#1a1e23" stroke="#b3bdca" stroke-width="1"/>
+    <text x="1190" y="313" class="mono" font-size="8" fill="#a8adb4" text-anchor="middle">8</text>
+    <rect x="1203" y="307" width="16" height="6" rx="1" fill="#2b313a"/>
+    <rect x="1203" y="307" width="0.77" height="6" rx="1" fill="#8b96a5"/>
+    <circle cx="1172" cy="328" r="6" fill="#1a1e23" stroke="#b3bdca" stroke-width="1"/>
+    <text x="1190" y="331" class="mono" font-size="8" fill="#a8adb4" text-anchor="middle">9</text>
+    <rect x="1203" y="325" width="16" height="6" rx="1" fill="#2b313a"/>
+    <rect x="1203" y="325" width="0.77" height="6" rx="1" fill="#8b96a5"/>
+    </g>
+    <g id="cnn-forward" class="wire">
+    <path d="M724 222H746"/>
+    <path d="M809 222H838"/>
+    <path d="M893 222H920"/>
+    <path d="M970 222H1004"/>
+    </g>
+    <g id="cnn-signals" filter="url(#signal-glow)">
+      <path class="signal" pathLength="1" style="--phase: -0.00s" d="M724 222H746"/>
+      <path class="signal" pathLength="1" style="--phase: -1.20s" d="M724 222H746"/>
+      <path class="signal" pathLength="1" style="--phase: -2.40s" d="M724 222H746"/>
+      <path class="signal" pathLength="1" style="--phase: -0.18s" d="M809 222H838"/>
+      <path class="signal" pathLength="1" style="--phase: -1.38s" d="M809 222H838"/>
+      <path class="signal" pathLength="1" style="--phase: -2.58s" d="M809 222H838"/>
+      <path class="signal" pathLength="1" style="--phase: -0.36s" d="M893 222H920"/>
+      <path class="signal" pathLength="1" style="--phase: -1.56s" d="M893 222H920"/>
+      <path class="signal" pathLength="1" style="--phase: -2.76s" d="M893 222H920"/>
+      <path class="signal" pathLength="1" style="--phase: -0.54s" d="M970 222H1004"/>
+      <path class="signal" pathLength="1" style="--phase: -1.74s" d="M970 222H1004"/>
+      <path class="signal" pathLength="1" style="--phase: -2.94s" d="M970 222H1004"/>
+      <path class="signal" pathLength="1" style="--phase: -0.00s" d="M1022 179L1077 170"/>
+      <path class="signal" pathLength="1" style="--phase: -0.29s" d="M1022 189L1077 260"/>
+      <path class="signal" pathLength="1" style="--phase: -0.58s" d="M1022 199L1077 206"/>
+      <path class="signal" pathLength="1" style="--phase: -0.87s" d="M1022 209L1077 296"/>
+      <path class="signal" pathLength="1" style="--phase: -1.16s" d="M1022 219L1077 242"/>
+      <path class="signal" pathLength="1" style="--phase: -1.45s" d="M1022 229L1077 188"/>
+      <path class="signal" pathLength="1" style="--phase: -1.74s" d="M1022 239L1077 278"/>
+      <path class="signal" pathLength="1" style="--phase: -2.03s" d="M1022 249L1077 224"/>
+      <path class="signal" pathLength="1" style="--phase: -2.32s" d="M1022 259L1077 170"/>
+      <path class="signal" pathLength="1" style="--phase: -2.61s" d="M1022 269L1077 260"/>
+      <path class="signal" pathLength="1" style="--phase: -2.90s" d="M1022 279L1077 206"/>
+      <path class="signal" pathLength="1" style="--phase: -3.19s" d="M1022 289L1077 296"/>
+      <path class="signal" pathLength="1" style="--phase: -0.00s" d="M1087 170L1166 166"/>
+      <path class="signal" pathLength="1" style="--phase: -0.43s" d="M1087 188L1166 166"/>
+      <path class="signal" pathLength="1" style="--phase: -0.86s" d="M1087 206L1166 166"/>
+      <path class="signal" pathLength="1" style="--phase: -1.29s" d="M1087 224L1166 166"/>
+      <path class="signal" pathLength="1" style="--phase: -1.72s" d="M1087 242L1166 166"/>
+      <path class="signal" pathLength="1" style="--phase: -2.15s" d="M1087 260L1166 166"/>
+      <path class="signal" pathLength="1" style="--phase: -2.58s" d="M1087 278L1166 166"/>
+      <path class="signal" pathLength="1" style="--phase: -3.01s" d="M1087 296L1166 166"/>
+    </g>
+    <g id="feature-progression">
+    <path d="M750 292V298H977V292" fill="none" stroke="#59616d"/>
+    <text x="864" y="319" class="mono" font-size="9" fill="#a8adb4" text-anchor="middle">3×3 CONV · BN · RELU · 2×2 POOL</text>
+    <text x="780" y="342" class="sans" font-size="9" fill="#a8adb4" text-anchor="middle">边缘 / Edges</text>
+    <text x="866" y="342" class="sans" font-size="9" fill="#a8adb4" text-anchor="middle">纹理 / Texture</text>
+    <text x="944" y="342" class="sans" font-size="9" fill="#a8adb4" text-anchor="middle">语义 / Semantics</text>
+    <text x="690" y="310" class="sans" font-size="11" fill="#a8adb4" text-anchor="middle">扫描数字 0</text>
+    <text x="690" y="329" class="mono" font-size="9" fill="#a8adb4" text-anchor="middle">SCAN</text>
+    <text x="1082" y="320" class="sans" font-size="10" fill="#a8adb4" text-anchor="middle">全连接</text>
+    <text x="1180" y="351" class="sans" font-size="10" fill="#a8adb4" text-anchor="middle">预测 / Pred: 0</text>
+    </g>
+    <text x="936" y="375" class="sans" font-size="12" fill="#c3c7cd" text-anchor="middle">空间逐层缩小 · 通道逐层增加 · 特征汇聚分类</text>
+    </g>
+
+    <path d="M64 389H1216" stroke="#3b3e42"/>
+    <text x="64" y="417" class="mono" font-size="11" letter-spacing="1.2" fill="#a8adb4">FROM QUESTION TO PRODUCT</text>
+    <path d="M94 448H1190" fill="none" stroke="#454a51"/>
+    <path d="M94 448H1190" fill="none" stroke="#e8eaed" stroke-width="2" class="flow"/>
+    <g fill="#111315" stroke="#b9bfc8" stroke-width="1.5">
+      <circle cx="94" cy="448" r="6"/>
+      <circle cx="459" cy="448" r="6"/>
+      <circle cx="824" cy="448" r="6"/>
+      <circle cx="1190" cy="448" r="6"/>
+    </g>
+    <g class="sans" font-size="13" fill="#c3c7cd">
+      <text x="64" y="480">观察 / Observe</text>
+      <text x="416" y="480">定义 / Define</text>
+      <text x="782" y="480">构建 / Build</text>
+      <text x="1216" y="480" text-anchor="end">迭代 / Learn</text>
+    </g>
   </g>
-  <text x="58" y="163" fill="#242321" font-family="Georgia, 'Times New Roman', serif" font-size="84" letter-spacing="-3">Tongbo Xu.</text>
-  <text x="66" y="197" fill="#595652" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="20" letter-spacing="3">徐同博 / Xtbreak</text>
-  <path d="M64 258H700" stroke="#d8d5cf"/>
-  <text x="64" y="296" fill="#595652" font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="16">安徽理工大学 · 硕士研究生 / AUST · Master's student</text>
-  <g fill="none" stroke="#aaa59c" stroke-width="1.3">
-    <path d="M850 85V65H875M1105 65H1130V85M850 245V265H875M1105 265H1130V245" stroke="#595652" stroke-width="2"/>
-    <circle cx="990" cy="132" r="66"/>
-    <circle cx="946" cy="202" r="66"/>
-    <circle cx="1034" cy="202" r="66"/>
-  </g>
-  <g fill="#595652" font-family="Arial, Helvetica, sans-serif" font-size="13" letter-spacing="1.5" text-anchor="middle">
-    <text x="990" y="111">PRODUCT</text>
-    <text x="920" y="222">VISION</text>
-    <text x="1060" y="222">TOOLS</text>
-  </g>
-  <circle cx="990" cy="181" r="5" fill="#242321"/>
 </svg>

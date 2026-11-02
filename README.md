@@ -8,9 +8,9 @@
 
 ## 关于我 / About me
 
-我是**徐同博（Xtbreak）**，**AI PM**，安徽理工大学硕士研究生，研究方向为**计算机视觉**。我的项目涵盖 AI 桌面伙伴、实用软件、交互网页与可复用的 Agent Skills。
+我是**徐同博**，**AI PM**，安徽理工大学硕士，研究方向为**计算机视觉**。我的项目涵盖 AI 桌面伙伴、实用软件、交互网页与可复用的 Agent Skills。
 
-I'm **Tongbo Xu (Xtbreak)**, an **AI PM** and a master's student at **Anhui University of Science and Technology**, researching **computer vision**. My projects span AI desktop companions, practical software, interactive web experiences and reusable Agent Skills.
+I'm **Tongbo Xu**, an **AI PM** researching **computer vision**. **Anhui University of Science and Technology · Master's**. My projects span AI desktop companions, practical software, interactive web experiences and reusable Agent Skills.
 
 ## 研究与项目实践 / Research & practice
 
