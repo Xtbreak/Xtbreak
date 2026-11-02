@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="330" viewBox="0 0 1280 330" role="img" aria-labelledby="title desc">
+  <title id="title">徐同博 Tongbo Xu — AI PM · Computer Vision · Agent Skills</title>
+  <desc id="desc">米白、灰、黑色个人主页横幅。徐同博，安徽理工大学硕士研究生，研究方向为计算机视觉。右侧以取景框和相交圆形连接产品、视觉与工具。</desc>
+  <rect x="1" y="1" width="1278" height="328" rx="20" fill="#f7f5f1" stroke="#d8d5cf"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#595652">
+    <text x="64" y="61" font-size="15" letter-spacing="1.7">AI PM · COMPUTER VISION · AGENT SKILLS</text>
+    <text x="64" y="230" font-size="22">From research to useful tools.</text>
+  </g>
+  <text x="58" y="163" fill="#242321" font-family="Georgia, 'Times New Roman', serif" font-size="84" letter-spacing="-3">Tongbo Xu.</text>
+  <text x="66" y="197" fill="#595652" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="20" letter-spacing="3">徐同博 / Xtbreak</text>
+  <path d="M64 258H700" stroke="#d8d5cf"/>
+  <text x="64" y="296" fill="#595652" font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="16">安徽理工大学 · 硕士研究生 / AUST · Master's student</text>
+  <g fill="none" stroke="#aaa59c" stroke-width="1.3">
+    <path d="M850 85V65H875M1105 65H1130V85M850 245V265H875M1105 265H1130V245" stroke="#595652" stroke-width="2"/>
+    <circle cx="990" cy="132" r="66"/>
+    <circle cx="946" cy="202" r="66"/>
+    <circle cx="1034" cy="202" r="66"/>
+  </g>
+  <g fill="#595652" font-family="Arial, Helvetica, sans-serif" font-size="13" letter-spacing="1.5" text-anchor="middle">
+    <text x="990" y="111">PRODUCT</text>
+    <text x="920" y="222">VISION</text>
+    <text x="1060" y="222">TOOLS</text>
+  </g>
+  <circle cx="990" cy="181" r="5" fill="#242321"/>
+</svg>
