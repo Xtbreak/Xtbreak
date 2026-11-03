@@ -57,5 +57,3 @@ Project summaries only; source code remains private.
 | **翻完 Anthropic 335 页招股书** | Anthropic 公司研究<br>Anthropic company research | [阅读原文 / Read](https://mp.weixin.qq.com/s/hTH5tWA1_2i25GKrkgDlOA) |
 
 ---
-
-[xtborin@gmail.com](mailto:xtborin@gmail.com) &nbsp; · &nbsp; [个人网站 / Website](https://xtbreak.github.io/personalWeb/)
