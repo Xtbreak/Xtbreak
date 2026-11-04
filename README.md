@@ -1,7 +1,7 @@
 ![徐同博 Tongbo Xu — AI PM · Computer Vision · Agent Skills](assets/banner.svg)
 
 <p align="center">
-  <a href="https://xtbreak.github.io/personalWeb/">个人网站 / Website</a> &nbsp; · &nbsp;
+  <a href="https://xtbreak.github.io/Xtbreak/">个人网站 / Website</a> &nbsp; · &nbsp;
   <a href="https://github.com/Xtbreak?tab=repositories">项目仓库 / Repositories</a> &nbsp; · &nbsp;
   <a href="mailto:xtborin@gmail.com">联系我 / Email</a>
 </p>
@@ -27,7 +27,7 @@ I'm **Tongbo Xu**, an **AI PM** researching **computer vision**. **Anhui Univers
 | :--- | :--- | :--- |
 | **CampusConnect** | 面向安徽理工大学的 Windows / macOS 校园网自动认证工具，支持图形界面、开机启动和断线自动登录。<br>A campus-network login utility for AUST, with a graphical interface, launch at login and automatic reauthentication on Windows and macOS. | [源码 / Code](https://github.com/Xtbreak/CampusConnect) |
 | **小黑盒 · 三世界宇宙旅程**<br>Heybox Universe | 使用 Three.js 构建的游戏主题交互网页；非官方、非商用课程概念 Demo。<br>A game-themed interactive web experience built with Three.js. An unofficial, non-commercial course concept demo. | [体验 / Demo](https://xtbreak.github.io/heybox-universe/)<br>[源码 / Code](https://github.com/Xtbreak/heybox-universe) |
-| **个人网站 / Personal website** | 个人介绍与作品展示网站，部分作品为明确标注的概念示例。<br>A personal site for my background and work, including clearly labelled concept examples. | [网站 / Live](https://xtbreak.github.io/personalWeb/)<br>[源码 / Code](https://github.com/Xtbreak/personalWeb) |
+| **个人网站 / Personal website** | 个人介绍与作品展示网站，部分作品为明确标注的概念示例。<br>A personal site for my background and work, including clearly labelled concept examples. | [网站 / Live](https://xtbreak.github.io/Xtbreak/)<br>[源码 / Code](https://github.com/Xtbreak/Xtbreak) |
 
 ## 开源工具 / Open-source Agent Skills
 
