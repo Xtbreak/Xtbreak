@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="zh-CN" data-lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0B0F17">
+  <title>徐同博 · AI 产品经理</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="preview.css">
+  <script>
+    (function () {
+      var q = new URLSearchParams(location.search).get('lang'), saved = null;
+      try { saved = localStorage.getItem('lang'); } catch (e) {}
+      var lang = (q || saved) === 'en' ? 'en' : 'zh';
+      document.documentElement.dataset.lang = lang;
+      document.documentElement.lang = lang === 'en' ? 'en' : 'zh-CN';
+    })();
+  </script>
+  <script src="preview.js" defer></script>
+</head>
+<body>
+  <canvas class="gl" aria-hidden="true"></canvas>
+  <canvas class="stars" aria-hidden="true"></canvas>
+  <div class="cursor" aria-hidden="true"><span class="cursor-dot"></span><span class="cursor-ring"><b class="cursor-label"></b></span></div>
+
+  <header class="bar">
+    <nav class="nav" aria-label="主导航">
+      <a href="#work" data-i18n="navWork">作品</a>
+      <a href="#writing" data-i18n="navWriting">文章</a>
+      <a href="#contact" data-i18n="navContact">联系</a>
+    </nav>
+    <div class="lang" role="group" aria-label="语言 / Language">
+      <span class="lang-thumb" aria-hidden="true"></span>
+      <button type="button" data-set-lang="zh" aria-pressed="true">中</button>
+      <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- 首屏：左侧是我（头像、定位、简介、标签），右侧是三张主打作品卡 -->
+    <section class="hero">
+      <div class="hero-left">
+        <div class="hero-id">
+          <span class="avatar-wrap"><img class="avatar" src="assets/avatar.jpg" alt="" width="64" height="64"><span class="pulse" aria-hidden="true"></span></span>
+          <p><b data-i18n="brand">徐同博</b><span data-i18n="roleShort">AI 产品经理</span></p>
+        </div>
+        <h1 class="hero-title" data-i18n="headline">把 AI 想法，
+做成真正能用的产品。</h1>
+        <p class="hero-lead" data-i18n="lead">计算机视觉硕士，想做 AI 产品经理。
+我习惯自己把想法做成能用的东西。</p>
+        <ul class="tags">
+          <li data-i18n="tag1">CV 硕士 · 安徽理工</li>
+          <li data-i18n="tag2">和 AI 一起写代码</li>
+          <li data-i18n="tag3">自己做到上线</li>
+          <li data-i18n="tag4">公众号写 AI 产品</li>
+        </ul>
+        <div class="hero-actions">
+          <a class="more-link" href="#work"><span data-i18n="ctaWork">看全部作品</span><i aria-hidden="true">↓</i></a>
+          <a class="hero-mail" href="mailto:xtborin@gmail.com">xtborin@gmail.com</a>
+        </div>
+      </div>
+
+      <div class="hero-strip">
+        <ul class="stats">
+          <li><b>07</b><span data-i18n="stWork">个作品</span></li>
+          <li><b>04</b><span data-i18n="stWrite">公众号文章</span></li>
+          <li><b>02</b><span data-i18n="stLive">个可在线体验</span></li>
+        </ul>
+        <a class="scroll-cue" href="#work"><span data-i18n="scrollCue">向下滚动</span><i aria-hidden="true"></i></a>
+      </div>
+
+      <div class="fan" aria-label="主打作品">
+        <a class="gcard g-violet" href="#w-xiyin">
+          <span class="gc-thumb gc-figure"><img src="assets/projects/xiyin.webp" alt="" width="619" height="1100" draggable="false"></span>
+          <span class="gc-top"><b data-i18n="xyTitle">汐音</b><span class="gc-no">macOS</span></span>
+          <span class="gc-mid" data-i18n="xyLine">记得你，也知道什么时候别打扰你</span>
+          <span class="gc-meta"><span><small data-i18n="kType">类型</small><span data-i18n="tXy">AI 桌面伙伴</span></span><span><small data-i18n="kState">状态</small><em data-i18n="sPrivate">私有</em></span></span>
+        </a>
+        <a class="gcard g-silver" href="#w-heybox">
+          <span class="gc-thumb"><img src="assets/projects/heybox-moon.webp" alt="" width="1600" height="1000" draggable="false"></span>
+          <span class="gc-top"><b data-i18n="hbTitle">小黑盒</b><span class="gc-no">Three.js</span></span>
+          <span class="gc-mid" data-i18n="hbLine">三世界宇宙旅程，和 AI 一起迭代了 40 多版</span>
+          <span class="gc-meta"><span><small data-i18n="kType">类型</small><span data-i18n="tHb">3D 网页</span></span><span><small data-i18n="kState">状态</small><em data-i18n="sPlay">可在线玩</em></span></span>
+        </a>
+        <a class="gcard g-aqua" href="#w-xunguan">
+          <span class="gc-thumb"><img src="assets/projects/xunguan-home.webp" alt="" width="1600" height="1000" draggable="false"></span>
+          <span class="gc-top"><b data-i18n="xgTitle">寻馆</b><span class="gc-no">Web</span></span>
+          <span class="gc-mid" data-i18n="xgLine">拍下展品，找到它在哪个博物馆</span>
+          <span class="gc-meta"><span><small data-i18n="kType">类型</small><span data-i18n="tXg">AI 产品</span></span><span><small data-i18n="kState">状态</small><em data-i18n="sLive">已上线</em></span></span>
+        </a>
+</div>
+
+    </section>
+
+    <!-- 横向画廊：每个作品一张渐变玻璃卡 -->
+    <section class="gallery" id="work" aria-labelledby="work-title">
+      <div class="gallery-sticky">
+        <div class="gallery-head">
+          <h2 id="work-title" data-i18n="workTitle">作品</h2>
+          <p class="counter" aria-hidden="true"><b class="counter-now">01</b><span>/ 07</span></p>
+        </div>
+        <svg class="rail" aria-hidden="true"><defs><linearGradient id="railg" x1="0" x2="1"><stop offset="0" stop-color="#7FB4E8" stop-opacity="0"/><stop offset=".5" stop-color="#7FB4E8" stop-opacity=".9"/><stop offset="1" stop-color="#7FB4E8" stop-opacity="0"/></linearGradient></defs><path class="rail-glow"/><path class="rail-path"/><circle class="rail-dot" r="4"/></svg>
+        <div class="track">
+          <article class="card card-lg g-violet" id="w-xiyin" data-key="xiyin" tabindex="0">
+            <figure class="card-media media-figure"><img src="assets/projects/xiyin.webp" alt="" width="619" height="1100" draggable="false"></figure>
+            <div class="card-text">
+              <p class="card-tag" data-i18n="xyTag">macOS AI 伙伴，私有项目</p>
+              <h3 data-i18n="xyTitle">汐音</h3>
+              <p data-i18n="xyLine">记得你，也知道什么时候别打扰你</p>
+            </div>
+          </article>
+          <article class="card card-lg g-silver" id="w-heybox" data-key="heybox" tabindex="0">
+            <figure class="card-media"><img src="assets/projects/heybox-moon.webp" alt="" width="1600" height="1000" draggable="false"></figure>
+            <div class="card-text">
+              <p class="card-tag" data-i18n="hbTag">3D 网页，可在线玩</p>
+              <h3 data-i18n="hbTitle">小黑盒</h3>
+              <p data-i18n="hbLine">三世界宇宙旅程，和 AI 一起迭代了 40 多版</p>
+            </div>
+          </article>
+          <article class="card g-pink" id="w-lecture" data-key="lecture" tabindex="0">
+            <figure class="card-media"><img src="assets/projects/lecture-hero.webp" alt="" width="1600" height="1000" draggable="false"></figure>
+            <div class="card-text">
+              <p class="card-tag">Agent Skill</p>
+              <h3>lecture-manuscript</h3>
+              <p data-i18n="lmLine">把课堂逐字稿洗成精简笔记</p>
+            </div>
+          </article>
+          <article class="card card-lg g-aqua" id="w-xunguan" data-key="xunguan" tabindex="0">
+            <figure class="card-media"><img src="assets/projects/xunguan-home.webp" alt="" width="1600" height="1000" draggable="false"></figure>
+            <div class="card-text">
+              <p class="card-tag" data-i18n="xgTag">AI 产品，已上线</p>
+              <h3 data-i18n="xgTitle">寻馆</h3>
+              <p data-i18n="xgLine">拍下展品，找到它在哪个博物馆</p>
+            </div>
+          </article>
+          <article class="card card-type g-lime" id="w-report" data-key="report" tabindex="0">
+            <figure class="card-media cover-svg" aria-hidden="true"><svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice"><defs><pattern id="dotg1" width="16" height="16" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#7FB4E8" opacity=".18"/></pattern></defs><rect width="400" height="300" fill="url(#dotg1)"/>
+<g fill="none" stroke="#7FB4E8" stroke-width="1.5"><rect x="52" y="40" width="170" height="220" rx="12" fill="rgba(127,180,232,.06)"/><rect x="236" y="70" width="112" height="150" rx="12" opacity=".55"/></g>
+<rect x="70" y="60" width="86" height="12" rx="3" fill="#7FB4E8"/><g fill="#7FB4E8" opacity=".35"><rect x="70" y="86" width="130" height="6" rx="3"/><rect x="70" y="100" width="112" height="6" rx="3"/><rect x="70" y="114" width="122" height="6" rx="3"/></g>
+<g fill="#7FB4E8"><rect x="72" y="196" width="18" height="40" rx="3" opacity=".45"/><rect x="98" y="176" width="18" height="60" rx="3" opacity=".7"/><rect x="124" y="160" width="18" height="76" rx="3"/><rect x="150" y="186" width="18" height="50" rx="3" opacity=".55"/><rect x="176" y="170" width="18" height="66" rx="3" opacity=".8"/></g>
+<g stroke="#7FB4E8" stroke-width="1.5" fill="none" opacity=".8"><circle cx="292" cy="98" r="11"/><circle cx="292" cy="146" r="11"/><circle cx="292" cy="194" r="11" fill="#7FB4E8"/><path d="M292 109v26M292 157v26"/></g></svg></figure>
+            <div class="card-text">
+              <p class="card-tag">Agent Skill</p>
+              <h3>visual-research-report</h3>
+              <p data-i18n="vrLine">把调研整理成可以离线阅读的 HTML 报告</p>
+            </div>
+          </article>
+          <article class="card card-type g-yellow" id="w-campus" data-key="campus" tabindex="0">
+            <figure class="card-media cover-svg" aria-hidden="true"><svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice"><defs><pattern id="dotg2" width="16" height="16" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#7FB4E8" opacity=".18"/></pattern><radialGradient id="wg" cx="50%" cy="70%" r="50%"><stop offset="0" stop-color="#7FB4E8" stop-opacity=".22"/><stop offset="1" stop-color="#7FB4E8" stop-opacity="0"/></radialGradient></defs><rect width="400" height="300" fill="url(#dotg2)"/><circle cx="200" cy="200" r="150" fill="url(#wg)"/>
+<g fill="none" stroke="#7FB4E8" stroke-linecap="round"><path d="M140 168a85 85 0 0 1 120 0" stroke-width="10" opacity=".35"/><path d="M110 138a127 127 0 0 1 180 0" stroke-width="10" opacity=".22"/><path d="M168 196a40 40 0 0 1 64 0" stroke-width="10" opacity=".6"/></g><circle cx="200" cy="222" r="11" fill="#7FB4E8"/>
+<g stroke="#7FB4E8" stroke-width="1.3" opacity=".55"><path d="M48 82L104 58L152 92M248 92L296 58L352 82"/></g><g fill="#7FB4E8"><circle cx="48" cy="82" r="5"/><circle cx="104" cy="58" r="5" opacity=".6"/><circle cx="152" cy="92" r="5" opacity=".8"/><circle cx="248" cy="92" r="5" opacity=".8"/><circle cx="296" cy="58" r="5" opacity=".6"/><circle cx="352" cy="82" r="5"/></g>
+<g transform="translate(282 214)"><circle r="18" fill="none" stroke="#7FB4E8" stroke-width="1.5"/><path d="M-7 0l5 5l9-10" fill="none" stroke="#7FB4E8" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></g></svg></figure>
+            <div class="card-text">
+              <p class="card-tag" data-i18n="ccTag">桌面工具，开源</p>
+              <h3>CampusConnect</h3>
+              <p data-i18n="ccLine">校园网自动认证，Windows 和 macOS 都能用</p>
+            </div>
+          </article>
+          <article class="card card-type g-mist" data-key="media" tabindex="0">
+            <figure class="card-media cover-svg" aria-hidden="true"><svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice"><rect x="46" y="36" width="96" height="68" rx="10" fill="rgba(127,180,232,.07)" stroke="#7FB4E8" stroke-opacity=".9" stroke-width="1.4"/><path d="M86 59L106 70L86 81Z" fill="#7FB4E8" opacity=".9"/><rect x="152" y="36" width="96" height="68" rx="10" fill="rgba(127,180,232,.07)" stroke="#7FB4E8" stroke-opacity=".45" stroke-width="1.4"/><g fill="#7FB4E8" opacity="0.32"><rect x="168" y="56" width="64" height="5" rx="2.5"/><rect x="168" y="68" width="50" height="5" rx="2.5"/><rect x="168" y="80" width="58" height="5" rx="2.5"/></g><rect x="258" y="36" width="96" height="68" rx="10" fill="rgba(127,180,232,.07)" stroke="#7FB4E8" stroke-opacity=".6" stroke-width="1.4"/><g fill="#7FB4E8" opacity=".6"><circle cx="298" cy="80" r="6"/><rect x="303" y="54" width="3" height="26"/><path d="M305 54q12 4 14 12q-6-5-14-5z"/></g><rect x="46" y="116" width="96" height="68" rx="10" fill="rgba(127,180,232,.07)" stroke="#7FB4E8" stroke-opacity=".5" stroke-width="1.4"/><g fill="#7FB4E8" opacity="0.35"><rect x="62" y="136" width="64" height="5" rx="2.5"/><rect x="62" y="148" width="50" height="5" rx="2.5"/><rect x="62" y="160" width="58" height="5" rx="2.5"/></g><rect x="152" y="116" width="96" height="68" rx="10" fill="rgba(127,180,232,.07)" stroke="#7FB4E8" stroke-opacity=".95" stroke-width="1.4"/><path d="M192 139L212 150L192 161Z" fill="#7FB4E8" opacity=".95"/><rect x="258" y="116" width="96" height="68" rx="10" fill="rgba(127,180,232,.07)" stroke="#7FB4E8" stroke-opacity=".4" stroke-width="1.4"/><g fill="#7FB4E8" opacity="0.28"><rect x="274" y="136" width="64" height="5" rx="2.5"/><rect x="274" y="148" width="50" height="5" rx="2.5"/><rect x="274" y="160" width="58" height="5" rx="2.5"/></g><rect x="46" y="196" width="96" height="68" rx="10" fill="rgba(127,180,232,.07)" stroke="#7FB4E8" stroke-opacity=".6" stroke-width="1.4"/><g fill="#7FB4E8" opacity=".6"><circle cx="86" cy="240" r="6"/><rect x="91" y="214" width="3" height="26"/><path d="M93 214q12 4 14 12q-6-5-14-5z"/></g><rect x="152" y="196" width="96" height="68" rx="10" fill="rgba(127,180,232,.07)" stroke="#7FB4E8" stroke-opacity=".45" stroke-width="1.4"/><g fill="#7FB4E8" opacity="0.32"><rect x="168" y="216" width="64" height="5" rx="2.5"/><rect x="168" y="228" width="50" height="5" rx="2.5"/><rect x="168" y="240" width="58" height="5" rx="2.5"/></g><rect x="258" y="196" width="96" height="68" rx="10" fill="rgba(127,180,232,.07)" stroke="#7FB4E8" stroke-opacity=".8" stroke-width="1.4"/><path d="M298 219L318 230L298 241Z" fill="#7FB4E8" opacity=".8"/></svg></figure>
+            <div class="card-text">
+              <p class="card-tag" data-i18n="mhTag">资源平台，私有项目</p>
+              <h3>MediaHub</h3>
+              <p data-i18n="mhLine">视频、歌谱、文章统一管理，按权限和额度访问</p>
+            </div>
+          </article>
+        </div>
+        <div class="floor" aria-hidden="true"><div class="mirror"><img alt="" src="assets/projects/heybox-moon.webp"></div></div>
+        <div class="dots" aria-label="选择作品"></div>
+      </div>
+    </section>
+
+    <!-- 文章：发在微信公众号 -->
+    <section class="writing" id="writing" aria-labelledby="writing-title">
+      <div class="writing-head">
+        <h2 id="writing-title" data-i18n="writingTitle">文章</h2>
+        <p data-i18n="writingSub">写在我的微信公众号，关于 AI 产品、工具和公司。</p>
+      </div>
+      <ol class="articles">
+        <li><a class="article" href="https://mp.weixin.qq.com/s/xaE4N5pzvhqohViHwmlHbg" target="_blank" rel="noopener noreferrer"><span class="a-topic" data-i18n="tp1">AI 产品经理</span><span class="a-title">AI 产品经理的幻灭与旧世界崩塌</span><span class="a-read"><span data-i18n="read">阅读</span> ↗</span></a></li>
+        <li><a class="article" href="https://mp.weixin.qq.com/s/UxXXmakDibp9JJj6A-B_Ow" target="_blank" rel="noopener noreferrer"><span class="a-topic" data-i18n="tp2">AI 工具</span><span class="a-title">Claude Code 能上车的正规渠道全评测</span><span class="a-read"><span data-i18n="read">阅读</span> ↗</span></a></li>
+        <li><a class="article" href="https://mp.weixin.qq.com/s/ee-FGK-JbAx2Gma1YzCbXA" target="_blank" rel="noopener noreferrer"><span class="a-topic" data-i18n="tp3">知识管理</span><span class="a-title">为什么在 AI 时代 Obsidian 才是最好的笔记软件</span><span class="a-read"><span data-i18n="read">阅读</span> ↗</span></a></li>
+        <li><a class="article" href="https://mp.weixin.qq.com/s/hTH5tWA1_2i25GKrkgDlOA" target="_blank" rel="noopener noreferrer"><span class="a-topic" data-i18n="tp4">公司研究</span><span class="a-title">翻完 Anthropic 335 页招股书</span><span class="a-read"><span data-i18n="read">阅读</span> ↗</span></a></li>
+      </ol>
+    </section>
+
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title" data-i18n="contactTitle">一起聊聊 AI 产品</h2>
+      <a class="mail magnetic" href="mailto:xtborin@gmail.com">xtborin@gmail.com</a>
+      <p class="note" data-i18n="note">样稿：首屏、作品画廊和联系方式。确认风格后再补齐文章和关于我。</p>
+    </section>
+  </main>
+</body>
+</html>
