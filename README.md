@@ -6,9 +6,7 @@
   <a href="mailto:xtborin@gmail.com">联系我 / Email</a>
 </p>
 
-## 关于我 / About me
-
-我是**徐同博**，**AI PM**，安徽理工大学硕士，研究方向为**计算机视觉**。我的项目涵盖 AI 桌面伙伴、实用软件、交互网页与可复用的 Agent Skills。
+## About me
 
 I'm **Tongbo Xu**, an **AI PM** researching **computer vision**. **Anhui University of Science and Technology · Master's**. My projects span AI desktop companions, practical software, interactive web experiences and reusable Agent Skills.
 
