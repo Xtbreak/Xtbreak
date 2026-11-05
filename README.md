@@ -23,19 +23,19 @@ I'm **Tongbo Xu**, an **AI PM** researching **computer vision**. **Anhui Univers
 
 ## 应用与网页 / Applications & web projects
 
-| 项目 / Project | 简介 / Overview | 入口 / Links |
-| :--- | :--- | :--- |
-| **CampusConnect** | 面向安徽理工大学的 Windows / macOS 校园网自动认证工具，支持图形界面、开机启动和断线自动登录。<br>A campus-network login utility for AUST, with a graphical interface, launch at login and automatic reauthentication on Windows and macOS. | [源码 / Code](https://github.com/Xtbreak/CampusConnect) |
-| **小黑盒 · 三世界宇宙旅程**<br>Heybox Universe | 使用 Three.js 构建的游戏主题交互网页；非官方、非商用课程概念 Demo。<br>A game-themed interactive web experience built with Three.js. An unofficial, non-commercial course concept demo. | [体验 / Demo](https://xtbreak.github.io/heybox-universe/)<br>[源码 / Code](https://github.com/Xtbreak/heybox-universe) |
-| **个人网站 / Personal website** | 个人介绍与作品展示网站，部分作品为明确标注的概念示例。<br>A personal site for my background and work, including clearly labelled concept examples. | [网站 / Live](https://xtbreak.github.io/Xtbreak/)<br>[源码 / Code](https://github.com/Xtbreak/Xtbreak) |
+| 项目 / Project | 简介 / Overview | Star |
+| :--- | :--- | :---: |
+| **[CampusConnect](https://github.com/Xtbreak/CampusConnect)** | 面向安徽理工大学的 Windows / macOS 校园网自动认证工具，支持图形界面、开机启动和断线自动登录。<br>A campus-network login utility for AUST, with a graphical interface, launch at login and automatic reauthentication on Windows and macOS. | [![CampusConnect stars](https://img.shields.io/github/stars/Xtbreak/CampusConnect?style=flat-square&label=%E2%98%85&color=007ec6)](https://github.com/Xtbreak/CampusConnect/stargazers) |
+| **[小黑盒 · 三世界宇宙旅程](https://github.com/Xtbreak/heybox-universe)**<br>Heybox Universe<br>[体验 / Demo](https://xtbreak.github.io/heybox-universe/) | 使用 Three.js 构建的游戏主题交互网页；非官方、非商用课程概念 Demo。<br>A game-themed interactive web experience built with Three.js. An unofficial, non-commercial course concept demo. | [![heybox-universe stars](https://img.shields.io/github/stars/Xtbreak/heybox-universe?style=flat-square&label=%E2%98%85&color=007ec6)](https://github.com/Xtbreak/heybox-universe/stargazers) |
+| **[个人网站 / Personal website](https://github.com/Xtbreak/Xtbreak)**<br>[网站 / Live](https://xtbreak.github.io/Xtbreak/) | 个人介绍与作品展示网站，部分作品为明确标注的概念示例。<br>A personal site for my background and work, including clearly labelled concept examples. | [![Xtbreak stars](https://img.shields.io/github/stars/Xtbreak/Xtbreak?style=flat-square&label=%E2%98%85&color=007ec6)](https://github.com/Xtbreak/Xtbreak/stargazers) |
 
 ## 开源工具 / Open-source Agent Skills
 
-| 项目 / Project | 简介 / Overview | 入口 / Links |
-| :--- | :--- | :--- |
-| **lecture-manuscript** | 将课堂逐字稿与课件整理成精简中文笔记，保留关键案例、步骤与图示。<br>Turns class transcripts and slides into concise Chinese study notes, preserving key examples, steps and diagrams. | [说明 / Guide](https://xtbreak.github.io/lecture-manuscript/)<br>[源码 / Code](https://github.com/Xtbreak/lecture-manuscript) |
-| **visual-research-report-skill** | 将调研与方案比较整理成连续阅读的 HTML 可视化报告，同时输出 Markdown。<br>Turns research and option comparisons into continuous-scroll HTML reports with a Markdown companion. | [源码 / Code](https://github.com/Xtbreak/visual-research-report-skill) |
-| **heybox-universe-skill** | 封装小黑盒交互网页的项目快照、规格与检查脚本，支持复刻和继续开发。<br>Packages a Heybox web-project snapshot, specifications and checking scripts for reproduction and continued development. | [说明 / Guide](https://xtbreak.github.io/heybox-universe-skill/)<br>[源码 / Code](https://github.com/Xtbreak/heybox-universe-skill) |
+| 项目 / Project | 简介 / Overview | Star |
+| :--- | :--- | :---: |
+| **[lecture-manuscript](https://github.com/Xtbreak/lecture-manuscript)**<br>[说明 / Guide](https://xtbreak.github.io/lecture-manuscript/) | 将课堂逐字稿与课件整理成精简中文笔记，保留关键案例、步骤与图示。<br>Turns class transcripts and slides into concise Chinese study notes, preserving key examples, steps and diagrams. | [![lecture-manuscript stars](https://img.shields.io/github/stars/Xtbreak/lecture-manuscript?style=flat-square&label=%E2%98%85&color=007ec6)](https://github.com/Xtbreak/lecture-manuscript/stargazers) |
+| **[visual-research-report-skill](https://github.com/Xtbreak/visual-research-report-skill)** | 将调研与方案比较整理成连续阅读的 HTML 可视化报告，同时输出 Markdown。<br>Turns research and option comparisons into continuous-scroll HTML reports with a Markdown companion. | [![visual-research-report-skill stars](https://img.shields.io/github/stars/Xtbreak/visual-research-report-skill?style=flat-square&label=%E2%98%85&color=007ec6)](https://github.com/Xtbreak/visual-research-report-skill/stargazers) |
+| **[heybox-universe-skill](https://github.com/Xtbreak/heybox-universe-skill)**<br>[说明 / Guide](https://xtbreak.github.io/heybox-universe-skill/) | 封装小黑盒交互网页的项目快照、规格与检查脚本，支持复刻和继续开发。<br>Packages a Heybox web-project snapshot, specifications and checking scripts for reproduction and continued development. | [![heybox-universe-skill stars](https://img.shields.io/github/stars/Xtbreak/heybox-universe-skill?style=flat-square&label=%E2%98%85&color=007ec6)](https://github.com/Xtbreak/heybox-universe-skill/stargazers) |
 
 ## 私有项目 / Private projects
 
