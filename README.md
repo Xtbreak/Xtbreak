@@ -49,11 +49,11 @@ Project summaries only; source code remains private.
 
 ## 文章 / Writing
 
-| 文章 / Article | 主题 / Topic | 阅读 / Read |
-| :--- | :--- | :--- |
-| **AI 产品经理的幻灭与旧世界崩塌** | AI 产品经理<br>AI product management | [阅读原文 / Read](https://mp.weixin.qq.com/s/xaE4N5pzvhqohViHwmlHbg) |
-| **Claude Code 能上车的正规渠道全评测** | Claude Code 使用渠道<br>Claude Code access options | [阅读原文 / Read](https://mp.weixin.qq.com/s/UxXXmakDibp9JJj6A-B_Ow) |
-| **为什么在 AI 时代 Obsidian 才是最好的笔记软件** | AI 与知识管理<br>AI & knowledge management | [阅读原文 / Read](https://mp.weixin.qq.com/s/ee-FGK-JbAx2Gma1YzCbXA) |
-| **翻完 Anthropic 335 页招股书** | Anthropic 公司研究<br>Anthropic company research | [阅读原文 / Read](https://mp.weixin.qq.com/s/hTH5tWA1_2i25GKrkgDlOA) |
+| 文章 / Article | 主题 / Topic |
+| :--- | :--- |
+| **[AI 产品经理的幻灭与旧世界崩塌](https://mp.weixin.qq.com/s/xaE4N5pzvhqohViHwmlHbg)** | AI 产品经理<br>AI product management |
+| **[Claude Code 能上车的正规渠道全评测](https://mp.weixin.qq.com/s/UxXXmakDibp9JJj6A-B_Ow)** | Claude Code 使用渠道<br>Claude Code access options |
+| **[为什么在 AI 时代 Obsidian 才是最好的笔记软件](https://mp.weixin.qq.com/s/ee-FGK-JbAx2Gma1YzCbXA)** | AI 与知识管理<br>AI & knowledge management |
+| **[翻完 Anthropic 335 页招股书](https://mp.weixin.qq.com/s/hTH5tWA1_2i25GKrkgDlOA)** | Anthropic 公司研究<br>Anthropic company research |
 
 ---
