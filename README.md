@@ -28,6 +28,14 @@ I'm **Tongbo Xu**, an **AI PM** researching **computer vision**. **Anhui Univers
 | **[DesktopPet](https://github.com/Xtbreak/DesktopPet)** | A macOS AI desktop companion with character interaction, text conversations, long-term memory and character-specific personas. A personal, non-commercial demo. | Private |
 | **[Heybox Universe](https://github.com/Xtbreak/heybox-universe)** | A game-themed interactive web experience built with Three.js. An unofficial, non-commercial course concept demo. | [![heybox-universe stars](https://img.shields.io/github/stars/Xtbreak/heybox-universe?style=flat-square&label=%E2%98%85&color=007ec6)](https://github.com/Xtbreak/heybox-universe/stargazers) |
 
+## Tools
+
+| Project | Overview | Star |
+| :--- | :--- | :---: |
+| **[CampusConnect](https://github.com/Xtbreak/CampusConnect)** | A Windows / macOS auto-login tool for Anhui University of Science and Technology campus network (telecom / mobile / unicom), with tray/menu bar and reconnect. | [![CampusConnect stars](https://img.shields.io/github/stars/Xtbreak/CampusConnect?style=flat-square&label=%E2%98%85&color=007ec6)](https://github.com/Xtbreak/CampusConnect/stargazers) |
+| **[MediaHub](https://github.com/Xtbreak/MediaHub)** | A local media resource platform for videos, scores, articles, announcements, banners and user permissions (React + Express + MySQL). | Private |
+| **[寻馆](https://github.com/Xtbreak/xunguan)** | A museum-collection lookup web app (photo + clues → Dify), ink-and-stone design. | Private |
+
 ## Skills
 
 | Project | Overview | Star |
