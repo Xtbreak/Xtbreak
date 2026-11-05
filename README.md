@@ -12,15 +12,6 @@
 
 I'm **Tongbo Xu**, an **AI PM** researching **computer vision**. **Anhui University of Science and Technology · Master's**. My projects span AI desktop companions, practical software, interactive web experiences and reusable Agent Skills.
 
-## 研究与项目实践 / Research & practice
-
-| 方向 / Area | 内容 / Practice |
-| :--- | :--- |
-| **计算机视觉 / Computer vision** | 硕士阶段的研究方向。<br>My research focus during my master's studies. |
-| **AI 应用 / AI applications** | 桌面伙伴、模型接口接入、持续对话与长期记忆。<br>Desktop companions, model integration, ongoing conversations and long-term memory. |
-| **Agent Skills** | 课堂笔记整理、可视化研究报告、交互网页复用工作流。<br>Workflows for study notes, visual research reports and reusable web experiences. |
-| **软件与交互 / Software & interaction** | 桌面工具、媒体管理与 Three.js 网页交互。<br>Desktop utilities, media management and Three.js web interactions. |
-
 ## Agent 工程 / Agent engineering
 
 | 项目 / Project | 简介 / Overview | Star |
