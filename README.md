@@ -49,11 +49,11 @@ Project summaries only; source code remains private.
 
 ## 文章 / Writing
 
-| 文章 / Article | 主题 / Topic |
+| 文章 / Article | 简介 / Overview |
 | :--- | :--- |
-| **[AI 产品经理的幻灭与旧世界崩塌](https://mp.weixin.qq.com/s/xaE4N5pzvhqohViHwmlHbg)** | AI 产品经理<br>AI product management |
-| **[Claude Code 能上车的正规渠道全评测](https://mp.weixin.qq.com/s/UxXXmakDibp9JJj6A-B_Ow)** | Claude Code 使用渠道<br>Claude Code access options |
-| **[为什么在 AI 时代 Obsidian 才是最好的笔记软件](https://mp.weixin.qq.com/s/ee-FGK-JbAx2Gma1YzCbXA)** | AI 与知识管理<br>AI & knowledge management |
-| **[翻完 Anthropic 335 页招股书](https://mp.weixin.qq.com/s/hTH5tWA1_2i25GKrkgDlOA)** | Anthropic 公司研究<br>Anthropic company research |
+| **[AI 产品经理的幻灭与旧世界崩塌](https://mp.weixin.qq.com/s/xaE4N5pzvhqohViHwmlHbg)** | 从企业知识库助手向客户推荐竞品说起，分析模型回答为什么难以预测，以及反复给提示词加规则会带来哪些新问题。<br>A knowledge assistant recommends a competitor. What went wrong, and why does each new prompt rule risk breaking something else? |
+| **[Claude Code 能上车的正规渠道全评测](https://mp.weixin.qq.com/s/UxXXmakDibp9JJj6A-B_Ow)** | 比较 9 个使用高阶 Claude 模型的渠道，逐一评估费用、支付门槛，以及购买的额度能否用于自己的客户端或终端。<br>Compares nine ways to access advanced Claude models by cost, payment options, and whether the credits work in your own client or terminal. |
+| **[为什么在 AI 时代 Obsidian 才是最好的笔记软件](https://mp.weixin.qq.com/s/ee-FGK-JbAx2Gma1YzCbXA)** | 从 Obsidian 把笔记存为本地 Markdown 文件讲起，说明如何让 AI 工具检索、整理旧笔记，同时自己决定哪些内容可以离开电脑。<br>Explores how local Markdown files let AI tools search and reorganize an Obsidian vault while you control which notes leave your computer. |
+| **[翻完 Anthropic 335 页招股书](https://mp.weixin.qq.com/s/hTH5tWA1_2i25GKrkgDlOA)** | 从招股书里的净亏损入手，拆解可转债估值变动如何影响账面数字，再看企业 API 客户如何支撑收入增长。<br>Reads Anthropic’s reported loss alongside its convertible-debt disclosures, then examines how enterprise API customers drive revenue growth. |
 
 ---
