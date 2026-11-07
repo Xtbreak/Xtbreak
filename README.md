@@ -16,13 +16,14 @@ I'm **Tongbo Xu**, an **AI PM** researching **computer vision**. **Anhui Univers
 | :--- | :--- | :---: |
 | **[PRD ↔ Code](https://github.com/Xtbreak/prd-code)** | Turns an agent idea into a product requirements document (PRD) and an architecture plan. For existing projects, it scans the code and highlights gaps between the implementation and the PRD. | [![prd-code stars](https://img.shields.io/github/stars/Xtbreak/prd-code?style=flat-square&label=%E2%98%85&color=007ec6)](https://github.com/Xtbreak/prd-code/stargazers) |
 | **[Dev-Framework](https://github.com/Xtbreak/Dev-Framework)** | A step-by-step guide to building AI products with coding agents, from requirements through implementation, testing and deployment. | [![Dev-Framework stars](https://img.shields.io/github/stars/Xtbreak/Dev-Framework?style=flat-square&label=%E2%98%85&color=007ec6)](https://github.com/Xtbreak/Dev-Framework/stargazers) |
+| **[Personal Agent](https://github.com/Xtbreak/Personal-Agent)** | A personal assistant foundation with long-term memory, drafting, reminders and confirmation before consequential actions. | [![Personal-Agent stars](https://img.shields.io/github/stars/Xtbreak/Personal-Agent?style=flat-square&label=%E2%98%85&color=007ec6)](https://github.com/Xtbreak/Personal-Agent/stargazers) |
 
 ## Applications
 
 | Project | Overview | Star |
 | :--- | :--- | :---: |
+| **[Paper2Talk](https://github.com/Xtbreak/Paper2Talk)** | A conversational workspace that turns research topics and papers into editable presentations with source figures, citations and speaker notes. | [![Paper2Talk stars](https://img.shields.io/github/stars/Xtbreak/Paper2Talk?style=flat-square&label=%E2%98%85&color=007ec6)](https://github.com/Xtbreak/Paper2Talk/stargazers) |
 | **[Product Manager Workbench](https://github.com/Xtbreak/product-manager-workbench)** | A desktop workspace for project materials, PRDs and AI assistants, from requirements to acceptance. | [![product-manager-workbench stars](https://img.shields.io/github/stars/Xtbreak/product-manager-workbench?style=flat-square&label=%E2%98%85&color=007ec6)](https://github.com/Xtbreak/product-manager-workbench/stargazers) |
-| **[Personal Agent](https://github.com/Xtbreak/Personal-Agent)** | A personal assistant foundation with long-term memory, drafting, reminders and confirmation before consequential actions. | [![Personal-Agent stars](https://img.shields.io/github/stars/Xtbreak/Personal-Agent?style=flat-square&label=%E2%98%85&color=007ec6)](https://github.com/Xtbreak/Personal-Agent/stargazers) |
 | **[DesktopPet](https://github.com/Xtbreak/DesktopPet)** | A macOS AI desktop companion with character interaction, text conversations, long-term memory and character-specific personas. A personal, non-commercial demo. | Private |
 | **[Heybox Universe](https://github.com/Xtbreak/heybox-universe)** | A game-themed interactive web experience built with Three.js. An unofficial, non-commercial course concept demo. | [![heybox-universe stars](https://img.shields.io/github/stars/Xtbreak/heybox-universe?style=flat-square&label=%E2%98%85&color=007ec6)](https://github.com/Xtbreak/heybox-universe/stargazers) |
 
