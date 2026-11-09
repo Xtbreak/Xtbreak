@@ -10,25 +10,6 @@
 
 I'm **Tongbo Xu**, an **AI PM** researching **computer vision**. **Anhui University of Science and Technology · Master's**. My projects span AI desktop companions, practical software, interactive web experiences and reusable Agent Skills.
 
-## 🏷️ 技能与标签 / Skills
-
-### 产品
-
-![需求分析](https://img.shields.io/badge/%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90-EF8435?style=flat-square)
-![Agent设计](https://img.shields.io/badge/Agent%E8%AE%BE%E8%AE%A1-9165BF?style=flat-square)
-![RAG方案](https://img.shields.io/badge/RAG%E6%96%B9%E6%A1%88-359E90?style=flat-square)
-![产品拆解](https://img.shields.io/badge/%E4%BA%A7%E5%93%81%E6%8B%86%E8%A7%A3-EC6468?style=flat-square)
-![Prompt工程](https://img.shields.io/badge/Prompt%E5%B7%A5%E7%A8%8B-D5A02C?style=flat-square)
-
-### 工程
-
-![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
-![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-
 ## Applications
 
 | Project | Overview | Star |
@@ -61,6 +42,25 @@ I'm **Tongbo Xu**, an **AI PM** researching **computer vision**. **Anhui Univers
 | **[ToPRD-skill](https://github.com/Xtbreak/ToPRD-skill)** | Creates AI product PRDs from ideas or existing projects, with optional implementation guides and project-specific interview Q&A. | [![ToPRD-skill stars](https://img.shields.io/github/stars/Xtbreak/ToPRD-skill?style=flat-square&label=%E2%98%85&color=007ec6)](https://github.com/Xtbreak/ToPRD-skill/stargazers) |
 | **[lecture-manuscript](https://github.com/Xtbreak/lecture-manuscript)**<br>[Guide](https://xtbreak.github.io/lecture-manuscript/) | Turns class transcripts and slides into concise Chinese study notes, preserving key examples, steps and diagrams. | [![lecture-manuscript stars](https://img.shields.io/github/stars/Xtbreak/lecture-manuscript?style=flat-square&label=%E2%98%85&color=007ec6)](https://github.com/Xtbreak/lecture-manuscript/stargazers) |
 | **[visual-research-report-skill](https://github.com/Xtbreak/visual-research-report-skill)** | Turns research and option comparisons into continuous-scroll HTML reports with a Markdown companion. | [![visual-research-report-skill stars](https://img.shields.io/github/stars/Xtbreak/visual-research-report-skill?style=flat-square&label=%E2%98%85&color=007ec6)](https://github.com/Xtbreak/visual-research-report-skill/stargazers) |
+
+## 🏷️ 技能与标签
+
+### 产品
+
+![需求分析](https://img.shields.io/badge/%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90-EF8435?style=flat-square)
+![Agent设计](https://img.shields.io/badge/Agent%E8%AE%BE%E8%AE%A1-9165BF?style=flat-square)
+![RAG方案](https://img.shields.io/badge/RAG%E6%96%B9%E6%A1%88-359E90?style=flat-square)
+![产品拆解](https://img.shields.io/badge/%E4%BA%A7%E5%93%81%E6%8B%86%E8%A7%A3-EC6468?style=flat-square)
+![Prompt工程](https://img.shields.io/badge/Prompt%E5%B7%A5%E7%A8%8B-D5A02C?style=flat-square)
+
+### 工程
+
+![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 
 ## 文章
 
