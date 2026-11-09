@@ -43,7 +43,7 @@ I'm **Tongbo Xu**, an **AI PM** researching **computer vision**. **Anhui Univers
 | **[lecture-manuscript](https://github.com/Xtbreak/lecture-manuscript)**<br>[Guide](https://xtbreak.github.io/lecture-manuscript/) | Turns class transcripts and slides into concise Chinese study notes, preserving key examples, steps and diagrams. | [![lecture-manuscript stars](https://img.shields.io/github/stars/Xtbreak/lecture-manuscript?style=flat-square&label=%E2%98%85&color=007ec6)](https://github.com/Xtbreak/lecture-manuscript/stargazers) |
 | **[visual-research-report-skill](https://github.com/Xtbreak/visual-research-report-skill)** | Turns research and option comparisons into continuous-scroll HTML reports with a Markdown companion. | [![visual-research-report-skill stars](https://img.shields.io/github/stars/Xtbreak/visual-research-report-skill?style=flat-square&label=%E2%98%85&color=007ec6)](https://github.com/Xtbreak/visual-research-report-skill/stargazers) |
 
-## 🏷️ 技能与标签
+## Skills
 
 ### 产品
 
