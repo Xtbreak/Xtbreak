@@ -45,15 +45,15 @@ I'm **Tongbo Xu**, an **AI PM** researching **computer vision**. **Anhui Univers
 
 ## Skills
 
-### 产品
+### Product
 
-![需求分析](https://img.shields.io/badge/%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90-EF8435?style=flat-square)
-![Agent设计](https://img.shields.io/badge/Agent%E8%AE%BE%E8%AE%A1-9165BF?style=flat-square)
-![RAG方案](https://img.shields.io/badge/RAG%E6%96%B9%E6%A1%88-359E90?style=flat-square)
-![产品拆解](https://img.shields.io/badge/%E4%BA%A7%E5%93%81%E6%8B%86%E8%A7%A3-EC6468?style=flat-square)
-![Prompt工程](https://img.shields.io/badge/Prompt%E5%B7%A5%E7%A8%8B-D5A02C?style=flat-square)
+![Requirements Analysis](https://img.shields.io/badge/Requirements%20Analysis-EF8435?style=flat-square)
+![Agent Design](https://img.shields.io/badge/Agent%20Design-9165BF?style=flat-square)
+![RAG Solutions](https://img.shields.io/badge/RAG%20Solutions-359E90?style=flat-square)
+![Product Teardown](https://img.shields.io/badge/Product%20Teardown-EC6468?style=flat-square)
+![Prompt Engineering](https://img.shields.io/badge/Prompt%20Engineering-D5A02C?style=flat-square)
 
-### 工程
+### Engineering
 
 ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
