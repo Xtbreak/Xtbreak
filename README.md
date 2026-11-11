@@ -52,23 +52,23 @@ I'm **Tongbo Xu**, an **AI PM** researching **computer vision**. **Anhui Univers
 | **[为什么在 AI 时代 Obsidian 才是最好的笔记软件](https://mp.weixin.qq.com/s/ee-FGK-JbAx2Gma1YzCbXA)** | 从 Obsidian 把笔记存为本地 Markdown 文件讲起，说明如何让 AI 工具检索、整理旧笔记，同时自己决定哪些内容可以离开电脑。 |
 | **[翻完 Anthropic 335 页招股书](https://mp.weixin.qq.com/s/hTH5tWA1_2i25GKrkgDlOA)** | 从招股书里的净亏损入手，拆解可转债估值变动如何影响账面数字，再看企业 API 客户如何支撑收入增长。 |
 
-## Tags
+## What I Do
 
-### What I Do
+![AI Product Management](https://img.shields.io/badge/AI%20Product%20Management-30363D?style=flat)
+![PRD Writing](https://img.shields.io/badge/PRD%20Writing-30363D?style=flat)
+![AI Agents](https://img.shields.io/badge/AI%20Agents-30363D?style=flat)
+![RAG](https://img.shields.io/badge/RAG-30363D?style=flat)
+![Agent Skills](https://img.shields.io/badge/Agent%20Skills-30363D?style=flat)
+![Prompt Engineering](https://img.shields.io/badge/Prompt%20Engineering-30363D?style=flat)
+![Computer Vision](https://img.shields.io/badge/Computer%20Vision-30363D?style=flat)
 
-![Requirements Analysis](https://img.shields.io/badge/Requirements%20Analysis-EF8435?style=flat-square)
-![Agent Design](https://img.shields.io/badge/Agent%20Design-9165BF?style=flat-square)
-![RAG Solutions](https://img.shields.io/badge/RAG%20Solutions-359E90?style=flat-square)
-![Product Teardown](https://img.shields.io/badge/Product%20Teardown-EC6468?style=flat-square)
-![Prompt Engineering](https://img.shields.io/badge/Prompt%20Engineering-D5A02C?style=flat-square)
+## What I Use
 
-### What I Use
-
-![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
-![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Python](https://img.shields.io/badge/Python-30363D?style=flat&logo=python&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-30363D?style=flat&logo=typescript&logoColor=white)
+![React](https://img.shields.io/badge/React-30363D?style=flat&logo=react&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-30363D?style=flat&logo=fastapi&logoColor=white)
+![LangGraph](https://img.shields.io/badge/LangGraph-30363D?style=flat&logo=langgraph&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-30363D?style=flat&logo=docker&logoColor=white)
 
 ---
