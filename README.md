@@ -54,7 +54,7 @@ I'm **Tongbo Xu**, an **AI PM** researching **computer vision**. **Anhui Univers
 
 ## Tags
 
-### Product
+### What I Do
 
 ![Requirements Analysis](https://img.shields.io/badge/Requirements%20Analysis-EF8435?style=flat-square)
 ![Agent Design](https://img.shields.io/badge/Agent%20Design-9165BF?style=flat-square)
@@ -62,7 +62,7 @@ I'm **Tongbo Xu**, an **AI PM** researching **computer vision**. **Anhui Univers
 ![Product Teardown](https://img.shields.io/badge/Product%20Teardown-EC6468?style=flat-square)
 ![Prompt Engineering](https://img.shields.io/badge/Prompt%20Engineering-D5A02C?style=flat-square)
 
-### Engineering
+### What I Use
 
 ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
